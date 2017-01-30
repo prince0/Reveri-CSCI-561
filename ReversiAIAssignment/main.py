@@ -108,6 +108,4 @@ def utility(state):
                 o += evaluation_matrix[i][j]
     return (x - o)
 
-print(utility(input_board))
-
 output_file.close()
