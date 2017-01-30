@@ -103,6 +103,11 @@ def utility(state):
     for i in range(8):
         for j in range(8):
             if state[i][j] == player1:
+                x += evaluation_matrix[i][j]
+            elif state[i][j] == player2:
+                o += evaluation_matrix[i][j]
+    return (x - o)
 
+print(utility(input_board))
 
 output_file.close()
